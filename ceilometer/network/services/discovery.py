@@ -116,3 +116,9 @@ class FloatingIPDiscovery(_BaseServicesDiscovery):
         """Discover floating IP resources to monitor."""
 
         return self.neutron_cli.fip_get_all()
+
+class RouterDiscovery(_BaseServicesDiscovery):
+    def discover(self, manager, param=None):
+        """Discover router resources to monitor."""
+
+        return self.neutron_cli.router_get_all()
