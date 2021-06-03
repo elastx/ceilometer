@@ -139,6 +139,11 @@ class Client(object):
         return fips
 
     @logged
+    def router_get_all(self):
+        routers = self.client.list_routers()['routers']
+        return routers
+
+    @logged
     def list_pools_v2(self):
         """This method is used to get the pools list.
 
