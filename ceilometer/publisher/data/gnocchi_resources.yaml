@@ -323,3 +323,7 @@ resources:
     attributes:
       controller: resource_metadata.controller
       switch: resource_metadata.switch
+
+  - resource_type: router
+    metrics:
+      - 'router'
