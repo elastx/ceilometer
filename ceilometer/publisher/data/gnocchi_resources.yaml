@@ -391,3 +391,7 @@ resources:
       network.services.lb.loadbalancer:
       network.services.lb.total.connections:
       network.services.lb.active.connections:
+
+  - resource_type: router
+    metrics:
+      - 'router'
